@@ -2,5 +2,5 @@ services:
   - docker
 script:
 - echo "${dockerhub}" | docker login -u hellojukay --password-stdin
-- docker build -t hellojukay/mdbookv0.4.3 .
+- docker build -t hellojukay/mdbook:v0.4.3 .
 - docker push  hellojukay/mdbook:v0.4.3
